@@ -6,9 +6,20 @@ app = Flask(__name__)
 Bootstrap = Bootstrap(app)
 
 @app.route("/")
+def startseite():
 
-@app.route("/index", methods=['POST'])
+    return render_template("index.html")
 
-connection.execute()
-connection.commit()
-connection.close()
+@app.route("/Mathematik")
+def mathematik():
+
+    return render_template("Mathe.html")
+
+
+
+
+#datenbank Befehle
+#connection = sqlite3.connect('user.db')
+#connection.execute()
+#connection.commit()
+#connection.close()
