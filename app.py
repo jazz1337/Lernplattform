@@ -10,7 +10,7 @@ def startseite():
 
     return render_template("index.html")
 
-@app.route("/Mathematik")
+@app.route("/Mathe")
 def mathematik():
 
     return render_template("Mathe.html")
